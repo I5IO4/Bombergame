@@ -327,8 +327,8 @@ Transform:
   m_LocalPosition: {x: -3.3414478, y: -0.42026007, z: -5.2917137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1881536978}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1436187413
 MonoBehaviour:
@@ -372,10 +372,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1436187412}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1881536979
 MonoBehaviour:
@@ -390,6 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverController: {fileID: 1881536980}
+  coinController: {fileID: 1436187413}
 --- !u!114 &1881536980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   server: {fileID: 1881536979}
   playerControllerPrefab: {fileID: 5166760792673243900, guid: 22ab14a44cf45b24eb079d5e606c9660, type: 3}
-  coinController: {fileID: 0}
+  coinController: {fileID: 1436187413}
   spawnArea:
     size: {x: 8, y: 8}
 --- !u!1001 &1933176121119395295
@@ -416,7 +416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2024991911838831014, guid: ae90a93dd1fcb86458a1f8ceb64051a9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2024991911838831014, guid: ae90a93dd1fcb86458a1f8ceb64051a9, type: 3}
       propertyPath: m_LocalPosition.x
